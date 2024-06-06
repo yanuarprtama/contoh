@@ -18,7 +18,7 @@ class peminjamanAlat extends Controller
     {
         $data = peminjamanLabModel::all();
         $lab = alatModel::all();
-        return view('peminjaman/peminjamanLab', compact('data'));
+        return view('peminjaman/peminjamanAlat', compact('data'));
         return view('peminjaman/formalat', [
             // 'data' => $data,
             'lab' => $lab,

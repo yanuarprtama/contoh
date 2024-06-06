@@ -78,7 +78,7 @@
                                         <td>{{$dt['status']}}</td>
                                         <td>{{$dt['stok']}}</td>
                                         <td><img style="width: 200px; height: 100px;" src="assets/img/alat/{{$dt['gambar']}}" alt="gambar"></td>
-                                        <td><a href="{{ route('editalat',['id'=> $dt['id']]) }}" class="btn btn-warning"><i class="fa-solid fa-edit"></i></a> | <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger{{$dt['id']}}"><i class="fa-solid fa-trash"></i></button> | <a href="{{ route('detailalat',['id'=> $dt['id']]) }}" class="btn btn-info"><i class="fa-solid fa-eye"></i></a></td>
+                                        <td><a href="" class="btn btn-warning"><i class="fa-solid fa-edit"></i></a> | <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal-danger{{$dt['id']}}"><i class="fa-solid fa-trash"></i></button> | <a href="" class="btn btn-info"><i class="fa-solid fa-eye"></i></a></td>
                                     </tr>
                                     <div class="modal fade" id="modal-danger{{$dt['id']}}">
                                         <div class="modal-dialog">
@@ -93,7 +93,7 @@
                                               <p>Anda yakin ingin menghapus data <b>{{$dt['nama']}}</b> ?&hellip;</p>
                                             </div>
                                             <div class="modal-footer justify-content-between">
-                                                <form action="{{ route('hapusalat',['id'=> $dt['id']]) }}" method="POST">
+                                                <form action="" method="POST">
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="button" class="btn btn-outline-light" data-dismiss="modal">Batal</button>
