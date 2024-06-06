@@ -54,19 +54,19 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <form class="row g-3" action="{{ route('tambah-peminjaman-lab') }}" method="post">
+                            <form class="row g-3" action="{{ route('') }}" method="post">
                                 @csrf
                                 <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">NIT</label>
-                                    <input type="text" class="form-control" id="inputEmail4" name="nit_pengguna" value="{{ Auth::user()->nomorinduk }}" readonly>
+                                    <label for="nit" class="form-label">NIT</label>
+                                    <input type="text" class="form-control" id="nit" name="nit_pengguna" value="{{ Auth::user()->nomorinduk }}" readonly>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputPassword4" class="form-label">Nama</label>
-                                    <input type="text" class="form-control" id="inputPassword4" name="nama_pengguna" value="{{ Auth::user()->nama }}" readonly>
+                                    <label for="nama" class="form-label">Nama</label>
+                                    <input type="text" class="form-control" id="nama" name="nama_pengguna" value="{{ Auth::user()->nama }}" readonly>
                                 </div>
                                 <div class="col-12">
-                                    <label for="inputAddress" class="form-label">Program Studi</label>
-                                    <input type="text" class="form-control" id="inputAddress" name="" value="{{ Auth::user()->nama }}" readonly>
+                                    <label for="prodi" class="form-label">Program Studi</label>
+                                    <input type="text" class="form-control" id="prodi" name="prodi_pengguna" value="{{ Auth::user()->nama }}" readonly>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="inputState" class="form-label">Laboratorium</label>
@@ -78,28 +78,28 @@
                                     </select>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputPassword4" class="form-label">Mata Kuliah</label>
-                                    <input type="text" class="form-control" id="inputMatKul" name="mata_kuliah">
+                                    <label for="matakuliah" class="form-label">Mata Kuliah</label>
+                                    <input type="text" class="form-control" id="matakuliah" name="matakuliah">
                                 </div>
                                 <div class="col-md-6">
                                     <label for="time-start">Jam Mulai:</label>
                                     <input type="datetime-local" id="time-start" name="time-start" value="2024-05-08 08:15" class="form-control" name="waktu_mulai" >
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="time-start">Jam Selesai:</label>
-                                    <input type="datetime-local" id="time-start" name="time-start" value="2024-05-08 08:15" class="form-control" name="waktu_selesai" >
+                                    <label for="time-end">Jam Selesai:</label>
+                                    <input type="datetime-local" id="time-end" name="time-end" value="2024-05-08 08:15" class="form-control" name="waktu_selesai" >
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Dosen Pengajar</label>
-                                    <input type="text" class="form-control" id="inputEmail4" name="dosen_pengajar">
+                                    <label for="dosen" class="form-label">Dosen Pengajar</label>
+                                    <input type="text" class="form-control" id="dosen" name="dosen_pengajar">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputPassword4" class="form-label">Praktikum</label>
-                                    <input type="text" class="form-control" id="inputPassword4" name="praktikum" >
+                                    <label for="praktikum" class="form-label">Praktikum</label>
+                                    <input type="text" class="form-control" id="praktikum" name="praktikum" >
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputPassword4" class="form-label">Jumlah</label>
-                                    <input type="text" class="form-control" id="inputPassword4" name="jumlah_peserta" >
+                                    <label for="alat" class="form-label">Alat</label>
+                                    <input type="text" class="form-control" id="alat" name="alat" >
                                 </div>
                                 <div class="col-6">
                                     <div class="form-check">
