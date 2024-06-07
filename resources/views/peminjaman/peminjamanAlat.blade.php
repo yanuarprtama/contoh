@@ -51,11 +51,6 @@
                             <h3 class="card-title">Peminjaman Alat</h3>
                         </div>
                         <!-- /.card-header -->
-                        <div class="card">
-                        <div class="card-header">
-                            <h3 class="card-title">Data Alat</h3>
-                        </div>
-                        <!-- /.card-header -->
                         <div class="card-body">
 
                             <a href="/tambahalat" class="btn btn-primary mb-3"><i class="fas fa-plus"></i> Tambah</a>
